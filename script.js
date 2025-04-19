@@ -26,7 +26,7 @@ window.onload = function () {
     
     if (botaoSim && botaoNao) {
         botaoSim.addEventListener('click', () => {
-            const whatsappLink = "https://wa.me/5562994494756?text=Eu%20aceito%20namorar%20com%20você%20meu%20amor"
+            const whatsappLink = "https://wa.me/5562994494756?text=Eu%20aceito%20namorar%20com%20você%20meu%20amor❤️❤️❤️"
             window.location.href = whatsappLink;
         });
 

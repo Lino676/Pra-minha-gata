@@ -89,7 +89,7 @@ main h2 {
 .imagens video {
     width: 100%;
     max-width: 300px;
-    height: 400px;
+    height: 350px;
     border: solid 2px #f4b6c2;
     border-radius: 20px;
 }
@@ -97,7 +97,7 @@ main h2 {
     width: 100%;
     max-width: 300px;
     height: 600px;
-    border: solid 5px #66b466;
+    border: solid 2px #66b466;
     border-radius: 20px;
 }
 .prints h4 {
