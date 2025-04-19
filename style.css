@@ -40,7 +40,7 @@ main {
     font-size: 30px;
     color: #f4b6c2;
     text-shadow: 2px 2px 5px black;
-    margin: 20px;
+    margin: 10px;
 }
 main h2 {
     font-size: 50px;
@@ -174,7 +174,7 @@ footer {
     width: 100%;
     object-fit: cover;
 }
-button {
+.anterior, .proximo {
     background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 50%;
@@ -184,19 +184,20 @@ button {
     width: 50px;
     height: 50px;
     padding: 1px;
-    cursor: pointer;
     font-size: 25px;
     transform: translateY(-50%);
 }
-
-button.anterior {
-    left: 10px;
+.anterior {
+    left: -10px;
 }
-
-button.proximo {
-    right: 10px;
+.proximo {
+    right: -10px;
 }
-
-button:hover {
+.anterior:hover {
     background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.proximo:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
