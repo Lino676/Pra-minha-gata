@@ -1,11 +1,65 @@
 body {
-    font-family: 'Dancing Script', cursive;
-    background-image: url(imagens/11.jpeg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    color: black;
+    background-color: black;
+    margin: 0;
+    position: relative;
+    z-index: 0;
 }
+body::before {
+    background: url("imagens/11.jpeg");
+    filter: brightness(30%);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+* {
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    color: #ff66b2;
+    text-shadow: 2px 2px 3px #ffffff;
+    margin-top: -25px;
+}
+main {
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    color: #f4b6c2;
+    text-shadow: 2px 2px 5px black;
+    margin: 20px;
+}
+main h2 {
+    font-size: 50px;
+    text-decoration: underline;
+}
+section h2 {
+    color: #4fa3d1;
+    font-size: 45px;
+    border: solid 5px;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(255,255,255,1);
+    animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+    0% {transform: translateY(10px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(10px);}
+}
+section
 .imagens img {
     width: 100%;
     max-width: 300px;
