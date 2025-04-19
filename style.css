@@ -123,31 +123,40 @@ main h2 {
 }
 #botoes{
     animation: float 4s ease-in-out infinite;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
     display: flex;
-    gap: 35px;
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-bottom: 200px;
 }
-.botao1, .botao2 {
-    width: 100%;
+#botao1, #botao2 {
     font-size: 30px;
     font-family: 'Lilita One', sans-serif;
     color: #f4b6c2;
-    max-width: 150px;
+    width: 150px;
     height: 50px;
     border: solid 5px #f4b6c2;
     border-radius: 200px;
     background-color: black;
     box-shadow: 2px 2px 5px rgba(255,255,255,1);
-    transition: 0.3 ease;
     cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    transition: 0.3 ease;
 }
-.botao1:hover {
-    transform: scale(1.05);
+#botao1 {
+    left: 30px;
+    top: 70px;
 }
-.botao2:hover {
+#botao2 {
+    right: 30px;
+    top: 70px;
+}
+#botao1:hover, #botao2:hover {
     transform: scale(1.05);
 }
 footer {
@@ -163,7 +172,7 @@ footer {
 }
 .carrossel-container {
     display: flex;
-    transform: 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 .carrossel-item {
@@ -175,7 +184,7 @@ footer {
     object-fit: cover;
 }
 .anterior, .proximo {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 50%;
     z-index: 100;
@@ -194,10 +203,10 @@ footer {
     right: -10px;
 }
 .anterior:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 .proximo:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
