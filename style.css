@@ -92,6 +92,9 @@ main h2 {
     height: 350px;
     border: solid 2px #f4b6c2;
     border-radius: 20px;
+    display: block;
+    visibility: visible;
+    z-index: 1;
 }
 .prints img {
     width: 100%;
