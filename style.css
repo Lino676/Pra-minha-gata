@@ -107,6 +107,7 @@ main h2 {
     border-radius: 20px;
 }
 .imagens video {
+    background-color: #000;
     width: 100%;
     max-width: 300px;
     height: auto;
