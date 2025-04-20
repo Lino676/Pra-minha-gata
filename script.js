@@ -1,4 +1,12 @@
 window.onload = function () {
+
+    const botaoMusica = document.getElementById ('musica');
+    const musica = document.getElementById('musica-de-fundo'); 
+    botaoMusica.addEventListener('click', function() {
+        musica.volume = 0.3;
+        musica.play();
+    });
+        
     let index = 0;
     const items = document.querySelectorAll('.carrossel-item');
     const totalItems = items.length;
@@ -52,3 +60,4 @@ window.onload = function () {
         botaoNao.style.top = `${novoY}px`;
     }
 }
+

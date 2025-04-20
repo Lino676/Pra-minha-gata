@@ -34,6 +34,25 @@ header {
     text-shadow: 2px 2px 3px #ffffff;
     margin-top: -25px;
 }
+#musica {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4b6c2;
+    border-radius: 20px;
+    border: solid 2px #f4b6c2;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Lilita One', sans-serif;
+    box-shadow: 2px 2px 5px white;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+#musica:hover {
+    transform: scale(1.05);
+}
 main {
     text-align: center;
     font-family: 'Lilita One', sans-serif;
